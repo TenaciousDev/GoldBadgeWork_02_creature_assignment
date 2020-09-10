@@ -1,0 +1,307 @@
+html    {
+    min-height: 100%;
+}
+
+body    {
+    background: linear-gradient(#3a7bd5,#3a6073);
+    min-height: 100%;
+    z-index: -1;
+}
+
+header  {
+    padding-top: 5%;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 30pt;
+    color: lightgrey;
+    animation: rock-on 5s 5.2s 1 both;
+    -webkit-animation: rock-on 5s 5.2s 1 both;
+    -moz-animation: rock-on 5s 5.2s 1 both;
+
+}
+
+.wrapper    {
+    margin: 3% 10%;
+    border-radius: 25px;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+}
+
+.blob   {
+    margin: auto;
+    height: 500px;
+    width: 550px;
+    animation-name              :   rolling     ,   left-right;
+    animation-duration          :   4s          ,   4s;
+    animation-iteration-count   :   1           ,   1;
+    animation-delay             :   1s          ,   1s;
+    animation-direction         :   alternate   ,   alternate;         
+    animation-fill-mode         :   both        ,   both;
+    -webkit-animation-name              :   rolling     ,   left-right;
+    -webkit-animation-duration          :   4s          ,   4s;
+    -webkit-animation-iteration-count   :   1           ,   1;
+    -webkit-animation-delay             :   1s          ,   1s;
+    -webkit-animation-direction         :   alternate   ,   alternate;         
+    -webkit-animation-fill-mode         :   both        ,   both;
+    -moz-animation-name              :   rolling     ,   left-right;
+    -moz-animation-duration          :   4s          ,   4s;
+    -moz-animation-iteration-count   :   1           ,   1;
+    -moz-animation-delay             :   1s          ,   1s;
+    -moz-animation-direction         :   alternate   ,   alternate;         
+    -moz-animation-fill-mode         :   both        ,   both;
+
+}
+
+.skin {
+    margin: auto;
+    height: 500px;
+    width: 550px;
+    background: linear-gradient(
+        #bdc3c7, #2c3e50
+    );
+    border: solid 3px black;
+    border-radius: 43% 57% 28% 72% / 66% 65% 35% 34%;
+    animation-name              :   rainbow;
+    animation-duration          :   2.2s;
+    animation-iteration-count   :   infinite;
+    animation-delay             :   5.4s;
+    animation-direction         :   alternate;        
+    animation-fill-mode         :   both;
+    -webkit-animation-name              :   rainbow;
+    -webkit-animation-duration          :   2.2s;
+    -webkit-animation-iteration-count   :   infinite;
+    -webkit-animation-delay             :   5.4s;
+    -webkit-animation-direction         :   alternate;        
+    -webkit-animation-fill-mode         :   both;
+    -moz-animation-name              :   rainbow;
+    -moz-animation-duration          :   2.2s;
+    -moz-animation-iteration-count   :   infinite;
+    -moz-animation-delay             :   5.4s;
+    -moz-animation-direction         :   alternate;        
+    -moz-animation-fill-mode         :   both;
+
+}
+
+.face   {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 75px;
+    left: 65px;
+}
+
+.lefteye    {
+    width: 35px;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 10px 25px / 30px;
+    z-index: 1;
+    position: relative;
+    left: 65px;
+    top: 26px;
+    background-color: black;
+    transform: rotate(-35deg);
+}
+
+.righteye    {
+    width: 35px;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 10px 25px / 30px;
+    z-index: 1;
+    position: relative;
+    left: 312px;
+    top: 45px;
+    background-color: black;
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+}
+
+.mouth  {
+    width: 350px;
+    height: 70px;
+    border: solid 3px black;
+    border-radius: 72% 28% 66% 34% / 0% 51% 49% 100% ;
+    margin: 16px;
+    position: relative;
+    top: 8em;
+    left: 2em;
+    background-color: #e35d6a;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+}
+
+.shadow {
+    width: 700px;
+    height: 80px;
+    position: fixed;
+    top: 79%;
+    left: 30%;
+    z-index: -1;
+    background: rgb(2,0,36);
+    background: radial-gradient(#17181a, #212629 10%, #394952 28%, transparent 46%);
+    border-radius: 25px 50px;
+    animation-name              :   left-right-shadow;
+    animation-duration          :   4s;
+    animation-iteration-count   :   1;
+    animation-delay             :   1s;
+    animation-direction         :   alternate;         
+    animation-fill-mode         :   both;
+
+    -webkit-animation-duration          :   4s;
+    -webkit-animation-iteration-count   :   1;
+    -webkit-animation-delay             :   1s;
+    -webkit-animation-direction         :   alternate;         
+    -webkit-animation-fill-mode         :   both;
+
+    -moz-animation-duration          :   4s;
+    -moz-animation-iteration-count   :   1;
+    -moz-animation-delay             :   1s;
+    -moz-animation-direction         :   alternate;         
+    -moz-animation-fill-mode         :   both;
+
+}
+
+#player {
+    top: 1%;
+    left: 1%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8pt;
+    text-align: center;
+    position: fixed;
+    z-index: 0;
+}
+
+@keyframes  rainbow {
+    10%  {
+        background: linear-gradient(
+            #1f4037, #99f2c8
+        );
+    }
+    20% {
+        background: linear-gradient(
+            #f12711, #f5af19
+        );
+    }
+    30% {
+        background: linear-gradient(
+            #0F2027, #203A43, #2C5364
+        );
+
+    }
+    40% {
+        background: linear-gradient(
+            #b92b27, #1565C0
+        );
+
+    }
+
+    50% {
+        background: linear-gradient(
+            #c31432, #240b36
+        );
+
+    }
+    60% {
+        background: linear-gradient(
+            #8A2387, #E94057, #F27121
+        );
+
+    }
+    70% {
+        background: linear-gradient(
+            #FC466B, #3F5EFB
+        );
+
+    }
+    80% {
+        background: linear-gradient(
+            #12c2e9, #c471ed, #f64f59
+        );
+
+    }
+    90% {
+        background: linear-gradient(
+            #00F260, #0575E6
+        );
+
+    }
+    100% {
+        background: linear-gradient(
+            #c31432, #240b36
+        );
+
+    }
+}
+
+@keyframes  rolling {
+    35% {
+        transform: rotate(300deg);
+        -webkit-transform: rotate(300deg);
+        -moz-transform: rotate(300deg);
+    }
+    75% {
+        transform: rotate(-35deg);
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+    }
+    95% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+    }
+}
+
+@keyframes  left-right  {
+    0%  {
+        position: fixed;
+        top: 25%;
+        left: -35%;
+    }
+    70%    {
+        position: fixed;
+        top: 25%;
+        left: 70%;
+    }
+    95% {
+        position: fixed;
+        top: 25.5%;
+        left: 35%;
+    }
+    100%    {
+        position: fixed;
+        top: auto;
+        left: auto;
+    }
+}
+
+@keyframes  left-right-shadow  {
+    0%  {
+        position: fixed;
+        top: 79%;
+        left: -35%;
+    }
+    70%    {
+        position: fixed;
+        top: 79%;
+        left: 70%;
+    }
+    100%    {
+        position: fixed;
+        top: 79%;
+        left: 30%;
+    }
+}
+
+@keyframes rock-on  {
+    0%  {
+        color: transparent;
+    }
+    100%    {
+        color: lightgrey;
+    }
+}
+
